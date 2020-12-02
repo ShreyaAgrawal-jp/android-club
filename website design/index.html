@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>ANDROID CLUB-VITCC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                font: 400 15px/1.8 "Lato", sans-serif;
+                color: #777;
+            }
+            .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+                position: relative;
+                opacity: 0.65;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .bgimg-1 {
+                background: url('Untitled-1.png'),linear-gradient(-70deg,black,grey);
+                min-height: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .bgimg-2 {
+                background-image: url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+                min-height: 400px;
+            }
+            .bgimg-3 {
+                background-image: url("rami-al-zayat-w33-zg-dNL4-unsplash.jpg");
+                min-height: 400px;
+            }
+            .bgimg-4 {
+                background-image: url("merakist-CNbRsQj8mHQ-unsplash.jpg");
+                min-height: 400px;
+            }
+            .bgimg #logo {
+                background-color: transparent;
+                background-position: center;
+                background-size: cover;
+            }
+            .caption {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                color: #000;
+            }
+            .caption div.border {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+            .caption span.border {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+            h3 {
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font: 20px "Lato", sans-serif;
+                color: #111;
+            }
+            @media only screen and (max-device-width: 1024px) {
+                .bgimg-1, .bgimg-2, .bgimg-3 {
+                    background-attachment: scroll;
+                }
+            }
+            .header {
+                position: fixed;
+                top: 0;
+                z-index: 1;
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+            .progress-container {
+                width: 100%;
+                height: 8px;
+                background: #282E34;
+            }
+            .progress-bar {
+                height: 8px;
+                background: linear-gradient(90deg, rgba(230,27,115,1) 0%, rgba(5,120,255,1) 100%);
+                width: 0%;
+            }
+            #fix_head{
+                background-color: #282E34;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+            }
+        </style>
+        <script>
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+                <nav id="fix_head">
+                    <a href="#" style="color:#f0f8ff; text-decoration:none;">&emsp;&emsp;Login&emsp;&emsp;</a>|
+                    <a href="#" style="color:#f0f8ff; text-decoration:none;">&emsp;&emsp;Gallery&emsp;&emsp;</a>|
+                    <a href="#" style="color:#f0f8ff; text-decoration:none;">&emsp;&emsp;Link1&emsp;&emsp;</a>|
+                    <a href="#" style="color:#f0f8ff; text-decoration:none;">&emsp;&emsp;Link2&emsp;&emsp;</a>
+                </nav>
+            </div>
+        </div>
+        <div class="bgimg-1">
+            <div class="caption">
+                <span class="border">VITCC PRESENTS</span><br>
+                <span class="border">ANDROID CLUB</span>
+            </div>
+        </div>
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">ABOUT THIS CLUB</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ABOUT US</span>
+            </div>
+        </div>
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+                <div class="col">
+                    <div class="row">
+                        <h3 style="color: aliceblue;">FRONTEND</h3>
+                        <p>JANE DOE</p>
+                        <p>JOHN DOE</p>
+                    </div>
+                    <div class="row">
+                        <h3 style="color: aliceblue;">BACKEND</h3>
+                        <p>JAMES DOE</p>
+                        <p>JENI DOE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg-3">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT US</span>
+            </div>
+        </div>
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+                <table style="color: azure;">
+                    <td><h3 style="color: aliceblue;">EMAIL</h3></td>
+                    <td><a href="mailto:admin.chennai@vit.ac.in" style="color:#f0f8ff; text-decoration:none;">&ensp;&ensp;admin.chennai@vit.ac.in</a></td>
+                </table>
+                <br>    
+                <table style="color: azure;">
+                    <td><h3 style="color: aliceblue;">PHONE</h3></td>
+                    <td>&ensp;&ensp;+91 44 3993 1555</td>
+                </table>
+            </div>
+        </div>
+        <div class="bgimg-4">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: black;">FOLLOW US ON</span>
+            </div>
+        </div>
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+                <table style="color: azure;">
+                    <td><h3 style="color: aliceblue;">INSTGRAM</h3></td>
+                    <td><a href="#" style="color:#f0f8ff; text-decoration:none;">&ensp;&ensp;@XYZ</a></td>
+                </table>
+                <br>    
+                <table style="color: azure;">
+                    <td><h3 style="color: aliceblue;">FACEBOOK</h3></td>
+                    <td>&ensp;&ensp;@XYZ</td>
+                </table>
+            </div>
+        </div>
+        <div class="bgimg-1">
+            <div class="caption">
+                <div class="border">
+                    <p>Made with <span style="color: red;">&hearts;</span> in VIT Chennai</p>
+                    <p>Cheers!</p>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
